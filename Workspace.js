@@ -67,14 +67,15 @@ firebase.database().ref("/Login").on("value", function (snapshot) {
       Workspace.onclick = function () {
         window.location.href = "Workspace.html";
       }
+    } else {
+      for (var i = 0; i < drop.length; i++) {
+        drop[i].style.display = "none";
+      }
     }
     if (Webmode["Login"] == "False") {
       icon.innerHTML = "login";
       name.innerHTML = "Login";
       arrow.style.display = "none";
-      for (var i = 0; i < drop.length; i++) {
-        drop[i].style.display = "none";
-      }
       Workspace.onclick = function () {
         swal(
           "",
@@ -118,7 +119,6 @@ Mode.onclick = function () {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
-
 // "----------------------------------------------Weekly datas-------------------------------------------------------"
 function SelectAllData() {
   firebase.database().ref('Workspace').on('value',
