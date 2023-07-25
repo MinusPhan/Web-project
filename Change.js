@@ -205,3 +205,30 @@ const onSubmitForm = (form) => {
         }, 500);
     }
 }
+
+firebase.database().ref("Current data").on("value", function (snapshot) {
+  if (snapshot.exists()) {
+    console.log(snapshot.val())
+    var UserID = snapshot.val()
+    firebase.database().ref("UserID").child(UserID["UserID"]).child("WeekDay").child(UserID["Day"]).update({
+      Status: UserID["Status"],
+      Time: UserID["Time"],
+      Temp: UserID["Temp"]
+    })
+    firebase.database().ref("Workspace").child(UserID["Date"]).child(UserID["Time"]).update({
+      Status: UserID["Status"],
+      UserID: UserID["UserID"],
+      Temp: UserID["Temp"]
+    })
+  }
+})
+
+var now = new Date();
+if (now.getHours() === 0 && now.getMinutes() === 0) {
+  firebase.database().ref('Current data').update({
+    UserID: "",
+    Status: "",
+    Time: "",
+    Temp: ""
+  })
+}
