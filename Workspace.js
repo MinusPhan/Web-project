@@ -30,7 +30,7 @@ const Weekbtn = document.getElementById("Weekly");
 const Week = document.getElementsByClassName("container2");
 
 home.onclick = function () {
-  window.location.href = "Home.html";
+  window.location.href = "Index.html";
 }
 
 login.addEventListener("click", function () {
