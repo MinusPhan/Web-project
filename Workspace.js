@@ -29,9 +29,9 @@ const All = document.getElementsByClassName("container");
 const Weekbtn = document.getElementById("Weekly");
 const Week = document.getElementsByClassName("container2");
 
-// home.onclick = function () {
-//   window.location.href = "index.html";
-// }
+home.onclick = function () {
+  window.location.href = "index.html";
+}
 
 login.addEventListener("click", function () {
   if (icon.innerHTML === "login") {
