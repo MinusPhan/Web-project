@@ -24,7 +24,7 @@ const Mode = document.getElementById("mode");
 const drop = document.getElementsByClassName("dropdown-content");
 
 home.onclick = function () {
-  window.location.href = "Home.html";
+  window.location.href = "index.html";
 }
 
 login.addEventListener("click", function () {
