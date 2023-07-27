@@ -335,6 +335,7 @@ input:checked+.slider:before {
 }
 
 #delete, #delete-data {
+    background-color: #fafafa;
     width: 5vw;
     position: fixed;
     margin-top: 39.9vh;
