@@ -344,6 +344,7 @@ function AddItemsToTable1(UserID, Name, Mon, Tue, Wed, Thu, Fri, Sat, Sun) {
   var td9 = document.createElement('td');
   td1.innerHTML = UserID;
   td2.innerHTML = Name;
+  td2.style.textAlign = "left";
   td3.innerHTML = Mon;
   td4.innerHTML = Tue;
   td5.innerHTML = Wed;
