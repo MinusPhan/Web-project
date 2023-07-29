@@ -554,7 +554,7 @@ deletedatabtn.onclick = function () {
           } else {
             Swal.fire(
               "",
-              "Delete failed! UserID doesn't exit!",
+              "Delete failed! UserID doesn't exist!",
               "error"
             );
           }
@@ -704,7 +704,7 @@ Detailbtn.onclick = function () {
         } else {
           Swal.fire(
             "",
-            "User doesn't exit!",
+            "User doesn't exist!",
             "error"
           );
         }
