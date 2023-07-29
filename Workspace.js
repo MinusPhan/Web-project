@@ -663,14 +663,13 @@ Detailbtn.onclick = function () {
   }).then((result) => {
     if (result.isConfirmed) {
 
-      showDetail();
-
       for (var i = 0; i < Week.length; i++) {
         Week[i].style.display = "none";
       }
       for (var i = 0; i < Detail.length; i++) {
         Detail[i].style.display = "block";
       }
+      showDetail();
       for (var i = 0; i < All.length; i++) {
         All[i].style.display = "none";
       }
