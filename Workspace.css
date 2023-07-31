@@ -408,6 +408,7 @@ input:checked+.slider:before {
 }
 
 #Submit {
+    display: none;
     padding: 15px;
     background-color: aquamarine;
     color: #1B2223;
