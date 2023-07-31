@@ -1487,7 +1487,7 @@ Download.onclick = function () {
 }
 
 function RTDownload() {
-  firebase.database().ref('Workspace').orderByChild('Time').once('value')
+  firebase.database().ref('Workspace').once('value')
     .then(function (AllRecords) {
       deleteAllRows('tbody4')
       var records = [];
@@ -1497,7 +1497,7 @@ function RTDownload() {
       records.reverse();
       return Promise.all(records.map(function (CurentRecord) {
         var Day = CurentRecord.key;
-        return firebase.database().ref('Workspace').child(CurentRecord.key).orderByChild('Time').once('value')
+        return firebase.database().ref('Workspace').child(CurentRecord.key).once('value')
           .then(function (AllRecords) {
             var records = [];
             AllRecords.forEach(function (CurentRecord) {
