@@ -1513,8 +1513,7 @@ function RTDownload() {
             }));
           });
       }));
-    });
-  Promise.resolve().then(function () {
+    }).then(function () {
     exportToExcel(table1, "Realtime.xlsx");
   })
   function AddItemsToRealtime(Day, Time, userID, Status, Temp) {
