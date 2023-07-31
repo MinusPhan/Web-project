@@ -1048,11 +1048,11 @@ Submit.onclick = function () {
                       break;
                     }
                   }
-                  firebase.database().ref('ENROLL AND DELETE').child('ENROLL').update({
+                  firebase.database().ref('ENROLL AND DELETE').child('ENROLL ID').update({
                     UserID: user.UserID,
                   })
                   setTimeout(() => {
-                    firebase.database().ref('ENROLL AND DELETE').child('ENROLL').update({
+                    firebase.database().ref('ENROLL AND DELETE').child('ENROLL NAME').update({
                       Name: NameUser,
                     })
                   }, 1000);
