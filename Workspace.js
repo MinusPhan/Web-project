@@ -1489,6 +1489,7 @@ Download.onclick = function () {
 function RTDownload() {
   firebase.database().ref('Workspace').orderByChild('Time').once('value')
     .then(function (AllRecords) {
+      deleteAllRows('tbody4')
       var records = [];
       AllRecords.forEach(function (CurentRecord) {
         records.push(CurentRecord);
