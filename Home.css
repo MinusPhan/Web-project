@@ -343,7 +343,7 @@ input:checked+.slider:before {
 
     .a {
         border-bottom: none;
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     #home {
@@ -376,12 +376,12 @@ input:checked+.slider:before {
     }
 
     .home h1 {
-        font-size: 200%;
+        font-size: 180%;
         max-width: 100vw;
     }
 
     .word {
-        margin-bottom: 20vh;
+        margin-bottom: 18vh;
     }
 }
 
