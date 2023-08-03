@@ -366,7 +366,7 @@ input:checked+.slider:before {
     }
 
     .time {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .home h1 {
@@ -375,7 +375,7 @@ input:checked+.slider:before {
     }
 
     .word {
-        margin-bottom: 18vh;
+        margin-bottom: 20vh;
     }
 }
 
@@ -425,6 +425,6 @@ input:checked+.slider:before {
     }
 
     .word {
-        margin-bottom: 25vh;
+        margin-bottom: 20vh;
     }
 }
