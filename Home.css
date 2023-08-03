@@ -327,7 +327,7 @@ input:checked+.slider:before {
 @media screen and (max-width: 767px) {
     #ic {
         width: 90px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     .home img {
@@ -417,7 +417,7 @@ input:checked+.slider:before {
 
     #spkt {
         margin-top: 70px;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
 
     .time {
@@ -435,6 +435,6 @@ input:checked+.slider:before {
     }
 
     .word {
-        margin-bottom: 40vh;
+        margin-bottom: 60vh;
     }
 }
