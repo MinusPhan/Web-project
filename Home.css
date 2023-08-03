@@ -375,7 +375,7 @@ input:checked+.slider:before {
     }
 
     .word {
-        margin-bottom: 20vh;
+        margin-bottom: 24vh;
     }
 }
 
@@ -419,12 +419,23 @@ input:checked+.slider:before {
         margin-bottom: 150px;
     }
 
+    .time {
+        margin-top: 70px;
+        display: flex;
+        justify-content: right;
+    }
+
+    .day {
+        display: flex;
+        justify-content: right;
+    }
+    
     .home h1 {
         font-size: 200%;
         max-width: 100vw;
     }
 
     .word {
-        margin-bottom: 20vh;
+        margin-bottom: 24vh;
     }
 }
