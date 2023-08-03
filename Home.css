@@ -282,7 +282,7 @@ input:checked+.slider:before {
 
 .day {
     margin-right: 2vw;
-    margin-bottom: 5vh;
+    margin-bottom: 500vh;
     display: flex;
     justify-content: right;
     text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
@@ -369,13 +369,17 @@ input:checked+.slider:before {
         margin-top: 70px;
     }
 
+    .day {
+        margin-bottom: 10vh;
+    }
+
     .home h1 {
         font-size: 180%;
         max-width: 100vw;
     }
 
     .word {
-        margin-bottom: 24vh;
+        margin-bottom: 20vh;
     }
 }
 
@@ -383,7 +387,6 @@ input:checked+.slider:before {
     body{
         overflow: auto;
     }
-    
     .home {
         background-image: url(./img/Background/tablet.png);
         background-size: 100% 100%;
@@ -426,8 +429,7 @@ input:checked+.slider:before {
     }
 
     .day {
-        display: flex;
-        justify-content: right;
+        margin-bottom: 15vh;
     }
     
     .home h1 {
