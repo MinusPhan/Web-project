@@ -366,11 +366,11 @@ input:checked+.slider:before {
     }
 
     .time {
-        margin-top: 70px;
+        margin-top: 65px;
     }
 
     .day {
-        margin-bottom: 10vh;
+        margin-bottom: 15vh;
     }
 
     .home h1 {
