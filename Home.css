@@ -423,13 +423,8 @@ input:checked+.slider:before {
         margin-bottom: 150px;
     }
 
-    .time {
-        margin-top: 70px;
+    .time, .day {
         right: 0:
-    }
-
-    .day {
-        right: 0;
     }
 
     .home h1 {
@@ -438,6 +433,6 @@ input:checked+.slider:before {
     }
 
     .word {
-        margin-bottom: 60vh;
+        margin-bottom: 40vh;
     }
 }
