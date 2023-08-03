@@ -369,7 +369,6 @@ info {
 
     .avt {
         height: 100px;
-        margin-left: 10%;
     }
 
     .avt1 {
@@ -384,11 +383,6 @@ info {
         margin-left: 20px;
         font-size: 150%;
     }
-
-    info {
-        margin-left: 11%;
-    }
-
 }
 
 @media screen and (min-width:767px) and (max-width:1023px) {
