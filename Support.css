@@ -338,10 +338,6 @@ info {
         display: none;
     }
 
-     #mode {
-        margin-left: 10px;
-    }
-
     #home {
         padding: 2px 10px;
     }
@@ -372,6 +368,10 @@ info {
 
     .avt1 {
         margin-top: 10vh;
+    }
+
+    .Huy {
+        width: 140px;
     }
 
     .nameM {
