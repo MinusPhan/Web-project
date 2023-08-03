@@ -338,9 +338,8 @@ info {
         display: none;
     }
 
-    .a {
-        border-bottom: none;
-        margin-left: 20px;
+     #mode {
+        margin-left: 10px;
     }
 
     #home {
@@ -369,6 +368,7 @@ info {
     }
 
     .avt {
+        height: 100px;
         margin-left: 10%;
     }
 
@@ -377,7 +377,7 @@ info {
     }
 
     .nameM {
-        margin-top: 20vh;
+        margin-top: 18vh;
     }
 
     .nameH {
