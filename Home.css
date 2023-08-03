@@ -341,10 +341,10 @@ input:checked+.slider:before {
         display: none;
     }
 
-    .a {
-        border-bottom: none;
-        margin-left: 40px;
+     #mode {
+        margin-left: 20px;
     }
+
 
     #home {
         padding: 2px 10px;
