@@ -327,6 +327,7 @@ input:checked+.slider:before {
 @media screen and (max-width: 767px) {
     #ic {
         width: 90px;
+        margin-left: 10px;
     }
 
     .home img {
@@ -415,11 +416,7 @@ input:checked+.slider:before {
 
     #spkt {
         margin-top: 70px;
-        margin-bottom: 150px;
-    }
-
-    .time, .day {
-        right: 0:
+        margin-bottom: 100px;
     }
 
     .home h1 {
