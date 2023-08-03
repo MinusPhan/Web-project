@@ -327,7 +327,6 @@ input:checked+.slider:before {
 @media screen and (max-width: 767px) {
     #ic {
         width: 90px;
-        margin-left: 10px;
     }
 
     .home img {
@@ -385,6 +384,10 @@ input:checked+.slider:before {
 }
 
 @media screen and (min-width:767px) and (max-width:1023px) {
+    body{
+        overflow: auto;
+    }
+    
     .home {
         background-image: url(./img/Background/tablet.png);
         background-size: 100% 100%;
