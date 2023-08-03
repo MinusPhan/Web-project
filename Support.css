@@ -331,7 +331,7 @@ info {
 
     #ic {
         width: 90px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .sidebar span {
@@ -348,7 +348,6 @@ info {
 
     #Workspace {
         padding: 2px 10px;
-        margin-left: 20px;
     }
 
     .dropdown-content {
@@ -372,16 +371,11 @@ info {
     }
 
     .avt1 {
-        margin-top: 13vh;
+        margin-top: 10vh;
     }
 
     .nameM {
-        margin-top: 18vh;
-    }
-
-    .nameH {
-        margin-left: 20px;
-        font-size: 150%;
+        margin-top: 15vh;
     }
 }
 
