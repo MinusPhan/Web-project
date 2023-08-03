@@ -425,6 +425,6 @@ input:checked+.slider:before {
     }
 
     .word {
-        margin-bottom: 40vh;
+        margin-bottom: 25vh;
     }
 }
