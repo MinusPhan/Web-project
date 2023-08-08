@@ -138,9 +138,9 @@ const onSubmitForm = (form) => {
               "error"
             );
           } else {
-            firebase.database().ref('users/' + user.Username).set({
-              Password: user.Password
-            })
+            // firebase.database().ref('users/' + user.Username).set({
+            //   Password: user.Password
+            // })
             swal(
               "",
               "Sign Up Success!",
