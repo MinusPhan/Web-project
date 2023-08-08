@@ -761,7 +761,7 @@ Search.onclick = function () {
                 if (snapshot.exists()) {
                   console.log(snapshot.val());
                   var Webmode = snapshot.val();
-                  if (Webmode["Webmode["UserID"] == 1) {
+                  if (Webmode["UserID"] == 1) {
                   left.style.display = "none";
                   right.style.display = "block";
                 }
