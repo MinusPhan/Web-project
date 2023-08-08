@@ -748,7 +748,6 @@ Search.onclick = function () {
         }
       }).then(() => {
         Showdetail();
-        Detailbtn.style.display = "none";
         firebase.database().ref('UserID').on('value', function (AllRecords) {
           var records = [];
           AllRecords.forEach(function (CurrentRecord) {
