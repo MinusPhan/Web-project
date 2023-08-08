@@ -1413,15 +1413,13 @@ deleteidbtn.onclick = function () {
                               "Delete successful",
                               "success"
                             );
-                            firebase.database().ref("Choose User").update({
-                              UserID: ""
-                            })
                             for (var i = 0; i < All.length; i++) {
                               All[i].style.display = "block";
                             }
                             for (var i = 0; i < Detail.length; i++) {
                               Detail[i].style.display = "none";
                             }
+                            Detailbtn.style.display = "block";
                             Allbtn.style.backgroundColor = "#3A4F50";
                             Allbtn.style.color = "#0EF6CC"
                             Detailbtn.style.backgroundColor = "#fafafa";
