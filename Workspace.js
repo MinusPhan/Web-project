@@ -1532,72 +1532,72 @@ firebase.database().ref("Current data").on("value", function (snapshot) {
 //----------------------------------------------Update data--------------------------------------------------------
 
 //---------------------------------------------Download data--------------------------------------------------------
-Download.onclick = function () {
-  Swal.fire({
-    title: 'Please choose the data you want to download!',
-    html: `
-      <div>
-        <input type="radio" id="option1" name="downloadOption" value="realtime" style="float: left; clear: both; margin-right: 10px; margin-top: 3px">
-        <label for="option1" style="display: block; float: left;">1. Realtime datas</label>
-      </div>
-      <div>
-        <input type="radio" id="option2" name="downloadOption" value="all" style="float: left; clear: both; margin-right: 10px; margin-top: 3px">
-        <label for="option2" style="display: block; float: left;">2. All datas</label>
-      </div>
-      <div>
-        <input type="radio" id="option3" name="downloadOption" value="full" style="float: left; clear: both; margin-right: 10px; margin-top: 3px">
-        <label for="option3" style="display: block; float: left;">3. Full</label>
-      </div>
-    `,
-    inputAttributes: {
-      autocapitalize: 'off'
-    },
-    showCancelButton: true,
-    confirmButtonText: 'Submit',
-    showLoaderOnConfirm: true,
-    preConfirm: () => {
-      const radios = document.getElementsByName('downloadOption');
-      let selectedValue;
-      for (const radio of radios) {
-        if (radio.checked) {
-          selectedValue = radio.value;
-          break;
-        }
-      }
-      if (selectedValue === "realtime") {
-        RTDownload();
-        Swal.fire(
-          "",
-          "Download successful",
-          "success"
-        );
-      }
-      if (selectedValue === "all") {
-        ALLDownload();
-        firebase.database().ref("Current data").update({
-          Update: "Update"
-        })
-        Swal.fire(
-          "",
-          "Download successful",
-          "success"
-        );
-      }
-      if (selectedValue === "full") {
-        RTDownload();
-        ALLDownload();
-        firebase.database().ref("Current data").update({
-          Update: "Update"
-        })
-        Swal.fire(
-          "",
-          "Download successful",
-          "success"
-        );
-      }
-    }
-  })
-}
+// Download.onclick = function () {
+//   Swal.fire({
+//     title: 'Please choose the data you want to download!',
+//     html: `
+//       <div>
+//         <input type="radio" id="option1" name="downloadOption" value="realtime" style="float: left; clear: both; margin-right: 10px; margin-top: 3px">
+//         <label for="option1" style="display: block; float: left;">1. Realtime datas</label>
+//       </div>
+//       <div>
+//         <input type="radio" id="option2" name="downloadOption" value="all" style="float: left; clear: both; margin-right: 10px; margin-top: 3px">
+//         <label for="option2" style="display: block; float: left;">2. All datas</label>
+//       </div>
+//       <div>
+//         <input type="radio" id="option3" name="downloadOption" value="full" style="float: left; clear: both; margin-right: 10px; margin-top: 3px">
+//         <label for="option3" style="display: block; float: left;">3. Full</label>
+//       </div>
+//     `,
+//     inputAttributes: {
+//       autocapitalize: 'off'
+//     },
+//     showCancelButton: true,
+//     confirmButtonText: 'Submit',
+//     showLoaderOnConfirm: true,
+//     preConfirm: () => {
+//       const radios = document.getElementsByName('downloadOption');
+//       let selectedValue;
+//       for (const radio of radios) {
+//         if (radio.checked) {
+//           selectedValue = radio.value;
+//           break;
+//         }
+//       }
+//       if (selectedValue === "realtime") {
+//         RTDownload();
+//         Swal.fire(
+//           "",
+//           "Download successful",
+//           "success"
+//         );
+//       }
+//       if (selectedValue === "all") {
+//         ALLDownload();
+//         firebase.database().ref("Current data").update({
+//           Update: "Update"
+//         })
+//         Swal.fire(
+//           "",
+//           "Download successful",
+//           "success"
+//         );
+//       }
+//       if (selectedValue === "full") {
+//         RTDownload();
+//         ALLDownload();
+//         firebase.database().ref("Current data").update({
+//           Update: "Update"
+//         })
+//         Swal.fire(
+//           "",
+//           "Download successful",
+//           "success"
+//         );
+//       }
+//     }
+//   })
+// }
 
 function RTDownload() {
   firebase.database().ref('Workspace').once('value')
