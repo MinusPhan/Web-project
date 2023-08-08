@@ -1365,7 +1365,7 @@ function AddItems(Day, Time, Status, Temp) {
 }
 
 deleteidbtn.onclick = function () {
-  firebase.database().ref("Choose User").on("value", function (snapshot) {
+  firebase.database().ref("Choose User").once("value", function (snapshot) {
     if (snapshot.exists()) {
       console.log(snapshot.val())
       var Web = snapshot.val()
