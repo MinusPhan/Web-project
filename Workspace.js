@@ -1282,7 +1282,7 @@ function Showdetail() {
           } else {
             Gender.innerHTML = Web["Gender"]
           }
-          Phone.innerHTML = Web["Phone"]
+          Phone.innerHTML = ""
           firebase.database().ref("UserID").child(Webmode["UserID"]).child("WeekDay").on('value', function (AllRecords) {
             var table = document.getElementById("tbody3");
             var rowCounttable = table.rows.length;
