@@ -757,10 +757,16 @@ Search.onclick = function () {
           for (var i = 0; i < records.length; i++) {
             if (text == records[i]) {
               currentIndex = i;
-              if (currentIndex == 0) {
-                left.style.display = "none";
-                right.style.display = "block";
-              }
+             firebase.database().ref("UserID").child(text).once("value", function (snapshot) {
+                if (snapshot.exists()) {
+                  console.log(snapshot.val());
+                  var Webmode = snapshot.val();
+                  if (Webmode["Webmode["UserID"] == 1) {
+                  left.style.display = "none";
+                  right.style.display = "block";
+                }
+               }
+              })
               if (currentIndex == records.length - 1) {
                 right.style.display = "none";
                 left.style.display = "block";
