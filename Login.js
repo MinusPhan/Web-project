@@ -88,7 +88,6 @@ const login = () => {
     };
     firebase.database().ref("/users").child(user.username).on("value", function (snapshot) {
         if (snapshot.exists()) {
-            console.log(snapshot.val())
             var Password = snapshot.val()
             if (Password["Password"] == user.password) {
                 firebase.database().ref("/Login").update({
