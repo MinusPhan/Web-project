@@ -1283,7 +1283,7 @@ function Showdetail() {
             Gender.innerHTML = Web["Gender"]
           }
           Phone.innerHTML = ""
-          firebase.database().ref("UserID").child(Webmode["UserID"]).child("WeekDay").on('value', function (AllRecords) {
+          firebase.database().ref("UserID").child(Webmode["UserID"]).child("WeekDay").once('value', function (AllRecords) {
             var table = document.getElementById("tbody3");
             var rowCounttable = table.rows.length;
             for (var i = rowCounttable - 1; i >= 0; i--) {
