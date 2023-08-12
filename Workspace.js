@@ -714,6 +714,7 @@ Detailbtn.onclick = function () {
   }
   Detailbtn.style.display = "none";
   left.style.display = "none";
+  right.style.display = "block";
   Weekbtn.style.backgroundColor = "#fafafa";
   Weekbtn.style.color = "black";
   Allbtn.style.backgroundColor = "#fafafa";
