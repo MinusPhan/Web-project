@@ -84,6 +84,7 @@ logout.onclick = function () {
     "Login": "False",
     "User": "None"
   })
+  window.location.href = "index.html";
 };
 
 firebase.database().ref("/Login").on("value", function (snapshot) {
